@@ -1,0 +1,192 @@
+/* Estilo general */
+body {
+  background: linear-gradient(180deg, #000000, #3b3b3d); /* Degradado azul */
+  font-family: Arial, sans-serif;
+  color: #ffffff;
+  margin: 0;
+  padding: 0;
+  animation: backgroundAnimation 5s ease-in-out infinite; /* Animación de fondo */
+}
+
+/* Animación de fondo */
+@keyframes backgroundAnimation {
+  0% {
+    background: linear-gradient(180deg, #000000, #2a5298);
+  }
+  50% {
+    background: linear-gradient(180deg, #1e3c72, #00c6ff); /* Fondo más brillante */
+  }
+  100% {
+    background: linear-gradient(180deg, #000000, #2a5298);
+  }
+}
+
+/* Contenedor principal */
+.container {
+  width: 90%;
+  margin: auto;
+  padding-top: 20px;
+  animation: fadeIn 1.5s ease; /* Animación de aparición */
+}
+
+/* Animación de fade-in */
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+/* Barra de tareas */
+.flex {
+  background: #1a1a1a;
+  padding: 15px 30px;
+  border-radius: 8px;
+  box-shadow: 0 0 15px rgba(0, 255, 255, 0.6);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Botones de la barra de tareas */
+.flex button {
+  background: none;
+  border: none;
+  color: #f0f0f0;
+  font-weight: bold;
+  font-size: 1rem;
+  padding: 10px 20px;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+}
+
+.flex button:hover {
+  color: #000;
+  background: #00ffff;
+  box-shadow: 0 0 10px #00ffff, 0 0 20px #00ffff;
+  cursor: pointer;
+}
+
+/* Efecto de neón de fondo en búsqueda */
+input[type='text'] {
+  padding: 8px;
+  border-radius: 8px;
+  border: 2px solid #00ffcc;
+  background: #1a1a1a;
+  color: #ffffff;
+  box-shadow: 0 0 10px rgba(0, 255, 255, 0.6);
+  outline: none;
+  transition: box-shadow 0.3s ease;
+}
+
+input[type='text']:focus {
+  box-shadow: 0 0 20px #00ffcc;
+}
+
+/* Títulos */
+h2 {
+  font-size: 2rem;
+  color: #ffffff;
+  text-shadow: 0 0 10px #ff00ff, 0 0 20px #00ffff;
+  margin-bottom: 20px;
+  text-align: center;
+  animation: neon-blink 2s infinite; /* Efecto de parpadeo en h2 */
+  border: 2px solid #00ff00; /* Borde de neón verde */
+  padding: 10px;
+  border-radius: 8px;
+}
+
+/* Animación de parpadeo de neón */
+@keyframes neon-blink {
+  0%, 100% {
+    text-shadow: 0 0 15px #ff00ff, 0 0 30px #00ffff;
+  }
+  50% {
+    text-shadow: 0 0 25px #ff00ff, 0 0 50px #00ffff;
+  }
+}
+
+/* Contenedor de proyectos */
+.grid {
+  display: grid;
+  gap: 1.5rem;
+}
+
+.grid div {
+  padding: 15px;
+  border-radius: 8px;
+  background: rgba(0, 0, 0, 0.8);
+  border: 2px solid #00ff00; /* Borde de neón verde */
+  box-shadow: 0 0 10px rgba(0, 255, 255, 0.3);
+  transition: transform 0.3s, box-shadow 0.3s;
+  text-align: center;
+  animation: fadeIn 1s ease-out; /* Animación de entrada en las tarjetas */
+}
+
+.grid div:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 20px rgba(0, 255, 255, 0.6);
+}
+
+/* Estilo para enlaces dentro de las tarjetas */
+.grid div a {
+  color: #00ffff;
+  font-weight: bold;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.grid div a:hover {
+  color: #ff00ff;
+}
+
+/* Sobre mí */
+.p-6 {
+  background: rgba(255, 255, 255, 0.1);
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.3);
+  color: #ffffff;
+  text-align: center;
+}
+
+/* Animación de pulsación */
+@keyframes pulse {
+  0%, 100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+  50% {
+    transform: scale(1.1);
+    opacity: 0.7;
+  }
+}
+
+.project-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 20px;
+  padding: 20px;
+}
+
+.project-item {
+  text-align: center;
+}
+
+.project-image {
+  width: 100%;
+  height: auto;
+  max-width: 300px; /* Máximo ancho para las imágenes */
+  border-radius: 8px; /* Opcional: para bordes redondeados */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Opcional: sombra para un efecto visual */
+  transition: transform 0.3s ease;
+}
+
+.project-image:hover {
+  transform: scale(1.05); /* Efecto de zoom al pasar el cursor */
+}

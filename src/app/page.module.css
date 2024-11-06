@@ -1,0 +1,75 @@
+/* src/app/page.module.css */
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #121212; /* Color de fondo oscuro */
+  color: #ffffff; /* Color de texto blanco */
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  text-align: center;
+}
+
+.profile-image {
+  border-radius: 50%; /* Hace que la imagen de perfil sea redonda */
+  width: 120px; /* Tamaño ajustado de la imagen de perfil */
+  height: 120px; /* Tamaño ajustado de la imagen de perfil */
+  object-fit: cover; /* Asegura que la imagen se recorte bien */
+  margin-bottom: 20px; /* Espacio entre la imagen de perfil y el texto */
+}
+
+h1, h2, p {
+  margin: 10px 0; /* Espacio vertical entre los encabezados y el párrafo */
+}
+
+.projects {
+  display: flex;
+  flex-wrap: wrap; /* Permite que las tarjetas se ajusten en múltiples filas */
+  justify-content: center; /* Centra las tarjetas en la página */
+  gap: 20px; /* Espacio entre las tarjetas */
+  margin-top: 20px; /* Espacio entre la descripción y los proyectos */
+}
+
+.card {
+  background-color: #1e1e1e; /* Color de fondo de las tarjetas */
+  border: 1px solid #3a3a3a; /* Borde sutil para las tarjetas */
+  border-radius: 8px; /* Esquinas redondeadas */
+  padding: 10px;
+  width: 250px; /* Ancho de las tarjetas ajustado */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra para las tarjetas */
+  transition: transform 0.2s; /* Transición suave al hacer hover */
+}
+
+.card:hover {
+  transform: scale(1.05); /* Efecto de escalado al pasar el mouse */
+}
+
+.card img {
+  width: 100%; /* Imagen ocupa todo el ancho de la tarjeta */
+  height: auto; /* Mantiene la proporción de la imagen */
+  border-radius: 4px; /* Esquinas redondeadas de las imágenes */
+}
+
+.card h3 {
+  margin: 10px 0; /* Espacio entre el título del proyecto y la imagen */
+}
+
+.card a {
+  color: #ffffff; /* Color de los enlaces */
+  text-decoration: none; /* Sin subrayado en los enlaces */
+}
+
+.card a:hover {
+  text-decoration: underline; /* Subrayar el enlace al pasar el mouse */
+}
+
+.footer {
+  margin-top: 20px; /* Espacio entre los proyectos y el pie de página */
+  text-align: center; /* Centrar el texto en el pie de página */
+  font-size: 14px; /* Tamaño de fuente más pequeño */
+}

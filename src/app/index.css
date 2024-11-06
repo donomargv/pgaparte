@@ -1,0 +1,164 @@
+.alert p {
+  margin-bottom: 0!important;
+}
+
+body {
+  background: #000428;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #004e92, #000428);  
+  background: linear-gradient(to right, #004e92, #000428); 
+  margin: 0;
+  padding: 0;
+  font-family: 'Raleway', sans-serif; /* Usa la fuente Raleway para todo el cuerpo */
+}
+
+header {
+  margin: 40px 0; /* Aumenté el margen para dar más espacio */
+  text-align: center; /* Centra el contenido del encabezado */
+}
+
+.contenido {
+  padding: 20px;
+}
+
+.contenido-principal {
+  background-color: #ffffff; /* Asegúrate de que el fondo es blanco */
+  padding: 30px;
+  border-radius: 20px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* Añadí una sombra sutil */
+}
+
+.presupuesto p {
+  margin-bottom: 0;
+  font-weight: bold;
+}
+
+.presupuesto p span {
+  font-weight: normal;
+}
+
+#gastos {
+  margin-bottom: 30px;
+}
+
+h1 {
+  font-family: 'Raleway', sans-serif; /* Consistencia en la fuente */
+  font-weight: 300; /* Ligera reducción del peso */
+  color: white;
+  text-align: center;
+  font-size: 4.5rem; /* Ajusta el tamaño de la fuente */
+}
+
+h2 {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 300;
+  color: #004e92;
+  margin-bottom: 30px;
+  font-size: 2.5rem; /* Reduce el tamaño del h2 */
+  text-align: center;
+}
+
+.campo {
+  margin-bottom: 2rem;
+}
+
+.error {
+  text-align: center;
+}
+
+.alert {
+  position: relative;
+  padding: 1rem 1.5rem; /* Mayor padding para más espacio */
+  margin-bottom: 1rem;
+  border: 1px solid transparent;
+  border-radius: .25rem;
+  font-weight: 500; /* Aumentar el peso de la fuente */
+}
+
+.alert-primary {
+  color: #004085;
+  background-color: #cce5ff;
+  border-color: #b8daff;
+}
+
+.alert-success {
+  color: #155724;
+  background-color: #d4edda;
+  border-color: #c3e6cb;
+}
+
+.alert-danger {
+  color: #721c24;
+  background-color: #f8d7da;
+  border-color: #f5c6cb;
+}
+
+.alert-warning {
+  color: #856404;
+  background-color: #fff3cd;
+  border-color: #ffeeba;
+}
+
+.gastos-realizados {
+  margin-bottom: 2rem;
+}
+
+.gastos-realizados li {
+  list-style: none;
+  margin-bottom: 0rem;
+  border-bottom: 1px solid #e1e1e1;
+  padding: 1rem 0;
+  transition: background-color 0.3s; /* Añadir efecto de transición */
+}
+
+.gastos-realizados li:hover {
+  background-color: rgba(0, 78, 146, 0.1); /* Cambia el color de fondo al pasar el mouse */
+}
+
+.gastos-realizados li:last-of-type {
+  margin-bottom: 0!important;
+}
+
+.gastos-realizados li p {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0;
+}
+
+.gastos-realizados li p .gasto {
+  background-color: #004085;
+  padding: 1rem;
+  color: white;
+  border-radius: 10px; /* Agrega un poco de redondeo */
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2); /* Añade sombra sutil */
+}
+.pagos-container {
+  background-color: white; /* Fondo blanco para la caja */
+  padding: 30px; /* Espacio interno */
+  border-radius: 20px; /* Bordes redondeados */
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* Sombra suave */
+  margin: 20px; /* Margen externo */
+}
+
+/* Estilo para el título */
+.pagos-container h1 {
+  color: #004e92; /* Color del texto del título */
+  font-size: 2.5rem; /* Tamaño del texto del título */
+  text-align: center; /* Centrar el título */
+}
+
+/* Estilo para la lista */
+.pagos-container ul {
+  list-style-type: none; /* Eliminar el estilo de lista */
+  padding: 0; /* Sin padding */
+}
+
+.pagos-container li {
+  padding: 10px; /* Espacio interno para cada ítem */
+  border-bottom: 1px solid #e1e1e1; /* Línea divisoria */
+}
+
+/* Quitar la línea divisoria del último ítem */
+.pagos-container li:last-child {
+  border-bottom: none;
+}
