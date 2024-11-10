@@ -172,7 +172,7 @@ function App() {
       target='_blank'
       rel='noopener noreferrer'
      >
-      <button className='hover:text-gray-400'>Sobre Mí</button>
+      <button className='hover:text-gray-400'>Sobre Nosotros</button>
      </a>
     </div>
 
